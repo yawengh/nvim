@@ -70,15 +70,13 @@ Info: the `N` and `I` are move cursor to line the first and the end.
 
 #### Other
 
-|---|--------------------------|
-| k | Insert                   |
-|---|--------------------------|
-| K | Insert to the line first |
-|---|--------------------------|
-| l | Undo                     |
-|---|--------------------------|
-| L | Undotree (a plugin)      |
-|---|--------------------------|
+| Keys | Features                 |
+|------|--------------------------|
+| k    | Insert                   |
+| K    | Insert to the line first |
+| l    | Undo                     |
+| L    | Undotree (a plugin)      |
+|------|--------------------------|
 
 ## Other related project
 
