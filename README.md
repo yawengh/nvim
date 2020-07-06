@@ -20,32 +20,32 @@ If you not understand this NeoVim configuration, please don't use it. Otherwise 
 - [ ] Install `nodejs`, and do `npm install -g neovim`
 - [ ] Install nerd-fonts (actually it's optional but it looks real good)
 
-#### To check the "health"
+### To check the "health"
 
 You can run `:checkhealth` in vim to check if your NeoVim work well.
 
-#### For Python Debugger (via `vimspector`)
+### For Python Debugger (via `vimspector`)
 - [ ] Install `debugpy` (`pip`)
 
-#### Config `Python` path
+### Config `Python` path
 - [ ] Well, make sure you have python
 - [ ] See `_machine_specific.vim`
 
-#### For Taglist:
+### For Taglist:
 - [ ] Install `ctags` for function/class/variable list
 
-#### For FZF
+### For FZF
 - [ ] Install `fzf`
 - [ ] Install `ag` (`the_silver_searcher`)
 
-#### And also...
+### And also...
 - [ ] Install `figlet` for inputing text ASCII art
 - [ ] Install `xclip` for system clipboard access (`Linux` and `xorg` only)
 
 
 ## Key mappings
 
-#### Movement
+### Movement
 
 Up, down, left, right to use:
 
@@ -68,7 +68,7 @@ Move cursor 5 times to use:
 ```
 Info: the `N` and `I` are move cursor to line the first and the end.
 
-#### Other
+### Other
 
 | Keys | Features                 |
 |------|--------------------------|
