@@ -72,8 +72,11 @@ Info: the `N` and `I` are move cursor to line the first and the end.
 
 |---|--------------------------|
 | k | Insert                   |
+|---|--------------------------|
 | K | Insert to the line first |
+|---|--------------------------|
 | l | Undo                     |
+|---|--------------------------|
 | L | Undotree (a plugin)      |
 |---|--------------------------|
 
