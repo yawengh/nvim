@@ -11,7 +11,7 @@ If you not understand this NeoVim configuration, please don't use it. Otherwise 
 
 - [Before Using](#before-using)
 - [Key mappings](#key-mappings)
-- [Other related project](#other-related-project)
+- [Other related projects](#other-related-projects)
 
 
 ## Before using
@@ -45,7 +45,7 @@ You can run `:checkhealth` in vim to check if your NeoVim work well.
 
 ## Key mappings
 
-### Movement
+### Movements
 
 Up, down, left, right to use:
 
@@ -68,7 +68,7 @@ Move cursor 5 times to use:
 ```
 Info: the `N` and `I` are move cursor to line the first and the end.
 
-### Other
+### Other keys
 
 | Keys | Features                 |
 |------|--------------------------|
@@ -77,7 +77,7 @@ Info: the `N` and `I` are move cursor to line the first and the end.
 | l    | Undo                     |
 | L    | Undotree (a plugin)      |
 
-## Other related project
+## Other related projects
 
 - [dwm](https://github.com/KiteAB/dwm)
 - [st](https://github.com/KiteAB/st)
