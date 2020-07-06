@@ -49,28 +49,33 @@ You can run `:checkhealth` in vim to check if your NeoVim work well.
 
 Up, down, left, right to use:
 
+```
     ^
     u
 < n   i >
     e
     V
+```
 
 Move cursor 5 times to use:
 
+```
     ^
     U
 < N   I >
     E
     V
-
+```
 Info: the `N` and `I` are move cursor to line the first and the end.
 
 #### Other
 
+|---|--------------------------|
 | k | Insert                   |
 | K | Insert to the line first |
 | l | Undo                     |
 | L | Undotree (a plugin)      |
+|---|--------------------------|
 
 ## Other related project
 
