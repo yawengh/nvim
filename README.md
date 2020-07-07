@@ -1,6 +1,6 @@
 # My Neovim Configuration
 
-[中文版本](./README-cn.md)
+[中文版](./README-cn.md)
 
 This repository has my personal NeoVim configuration files. (I'm a [colemak](https://www.colemak.com) user.)
 
