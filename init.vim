@@ -422,7 +422,7 @@ endfunc
 call plug#begin('~/.config/nvim/plugged')
 
 " Testing my own plugin
-" Plug 'theniceboy/vim-calc'
+Plug 'theniceboy/vim-calc'
 
 " Pretty Dress
 " Plug 'bling/vim-bufferline'
@@ -879,10 +879,10 @@ let g:far#mapping = {
 " ===
 " === vim-calc
 " ===
-"noremap <LEADER>a :call Calc()<CR>
+noremap <LEADER>a :call Calc()<CR>
 " Testing
 "if !empty(glob('~/Github/vim-calc/vim-calc.vim'))
-"source ~/Github/vim-calc/vim-calc.vim
+"	source ~/Github/vim-calc/vim-calc.vim
 "endif
 
 
