@@ -7,4 +7,5 @@ tmp/
 .netrwhist
 _machine_specific.vim
 .vim-bookmarks
+.backColor
 
