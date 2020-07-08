@@ -72,12 +72,18 @@ Info: the `N` and `I` are move cursor to line the first and the end.
 
 ### Other keys
 
-| Keys | Features                 |
-|------|--------------------------|
-| k    | Insert                   |
-| K    | Insert to the line first |
-| l    | Undo                     |
-| L    | Undotree (a plugin)      |
+| Keys | Features                                    |
+|------|---------------------------------------------|
+| k    | Insert                                      |
+| K    | Insert to the line beginning                |
+| l    | Undo                                        |
+| L    | Undotree (a plugin)                         |
+| b    | Move cursor to previous word's beginning    |
+| B    | Move cursor to previous 5 words's beginning |
+| w    | Move cursor to next word's beginning        |
+| W    | Move cursor to next 5 words's beginning     |
+| H    | Move cursor to next word's end              |
+
 
 ## Other related projects
 
