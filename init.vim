@@ -309,14 +309,24 @@ noremap <LEADER>q <C-w>j:q<CR>
 " ===
 " === Tab management
 " ===
+
+" Tabs
 " Create a new tab with tu
-noremap tu :tabe<CR>
+"noremap tu :tabe<CR>
 " Move around tabs with tn and ti
-noremap tn :-tabnext<CR>
-noremap ti :+tabnext<CR>
+"noremap tn :-tabnext<CR>
+"noremap ti :+tabnext<CR>
 " Move the tabs with tmn and tmi
-noremap tmn :-tabmove<CR>
-noremap tmi :+tabmove<CR>
+"noremap tmn :-tabmove<CR>
+"noremap tmi :+tabmove<CR>
+
+" Buffers
+set hidden
+nnoremap <silent> tl :ls<CR>
+nnoremap <silent> tu :enew<CR>
+nnoremap <silent> ti :bnext<CR>
+nnoremap <silent> tn :bprevious<CR>
+nnoremap <silent> te :bdelete<CR>
 
 
 " ===
@@ -425,7 +435,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'theniceboy/vim-calc'
 
 " Pretty Dress
-" Plug 'bling/vim-bufferline'
+Plug 'bling/vim-bufferline'
 Plug 'theniceboy/vim-deus'
 "Plug 'arzg/vim-colors-xcode'
 
@@ -433,7 +443,6 @@ Plug 'theniceboy/vim-deus'
 "Plug 'theniceboy/eleline.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'bling/vim-bufferline'
 Plug 'liuchengxu/space-vim-theme'
 Plug 'dracula/vim'
 
@@ -616,10 +625,15 @@ hi NonText ctermfg=gray guifg=grey10
 
 
 " ===
-" === eleline.vim
+" === vim-airline
 " ===
 "let g:airline_powerline_fonts = 0
 let g:airline_theme='dracula'
+
+" Show buffers on top
+"let g:airline#extensions#tabline#enabled=1
+" Show buffers count
+let g:airline#extensions#tabline#buffer_nr_show=1
 
 
 " ==
@@ -749,7 +763,7 @@ let g:table_mode_cell_text_object_i_map = 'k<Bar>'
 " ===
 set rtp+=/usr/local/opt/fzf
 set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
-set rtp+=/home/david/.linuxbrew/opt/fzf
+set rtp+=/home/kiteab/.linuxbrew/opt/fzf
 noremap <C-p> :Files<CR>
 noremap <C-f> :Rg<CR>
 noremap <C-h> :History<CR>
