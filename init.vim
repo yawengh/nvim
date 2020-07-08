@@ -567,7 +567,7 @@ Plug 'itchyny/calendar.vim'
 " Other visual enhancement
 Plug 'ryanoasis/vim-devicons'
 Plug 'luochen1990/rainbow'
-Plug 'mg979/vim-xtabline'
+"Plug 'mg979/vim-xtabline'
 Plug 'wincent/terminus'
 
 " Other useful utilities
@@ -1137,13 +1137,13 @@ let g:rainbow_active = 1
 " ===
 " === xtabline
 " ===
-let g:xtabline_settings = {}
-let g:xtabline_settings.enable_mappings = 0
-let g:xtabline_settings.tabline_modes = ['tabs', 'buffers']
-let g:xtabline_settings.enable_persistance = 0
-let g:xtabline_settings.last_open_first = 1
-noremap to :XTabCycleMode<CR>
-noremap \p :XTabInfo<CR>
+"let g:xtabline_settings = {}
+"let g:xtabline_settings.enable_mappings = 0
+"let g:xtabline_settings.tabline_modes = ['tabs', 'buffers']
+"let g:xtabline_settings.enable_persistance = 0
+"let g:xtabline_settings.last_open_first = 1
+"noremap to :XTabCycleMode<CR>
+"noremap \p :XTabInfo<CR>
 
 
 " ===
