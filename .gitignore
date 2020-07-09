@@ -8,4 +8,5 @@ tmp/
 _machine_specific.vim
 .vim-bookmarks
 .backColor
+.README.md
 
