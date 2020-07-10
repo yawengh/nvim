@@ -8,13 +8,11 @@ If you not understand this NeoVim configuration, please don't use it, Otherwise 
 
 ![](./screenshots/1.png)
 
-
 ## Guide
 
 - [Before Using](#before-using)
 - [Key mappings](#key-mappings)
 - [Other related projects](#other-related-projects)
-
 
 ## Before using
 
@@ -43,7 +41,6 @@ You can run `:checkhealth` in vim to check if your NeoVim work well.
 ### And also...
 - [ ] Install `figlet` for inputing text ASCII art
 - [ ] Install `xclip` for system clipboard access (`Linux` and `xorg` only)
-
 
 ## Key mappings
 
@@ -83,7 +80,7 @@ Info: the `N` and `I` are move cursor to line the first and the end.
 | w    | Move cursor to next word's beginning        |
 | W    | Move cursor to next 5 words's beginning     |
 | H    | Move cursor to next word's end              |
-
+| tt   | Open the file explorer (coc.nvim)           |
 
 ## Other related projects
 
