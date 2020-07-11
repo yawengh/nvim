@@ -461,6 +461,9 @@ Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 Plug 'airblade/vim-rooter'
 Plug 'pechorin/any-jump.vim'
 
+" Toml file support
+Plug 'cespare/vim-toml', { 'for': ['toml', 'vim-plug'] }
+
 " Taglist
 Plug 'liuchengxu/vista.vim'
 
