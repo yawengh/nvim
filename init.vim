@@ -444,8 +444,7 @@ Plug 'theniceboy/vim-deus'
 
 " Status line
 "Plug 'theniceboy/eleline.vim'
-"Plug 'vim-airline/vim-airline'
-Plug 'Styadev/HicusLine'
+Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'liuchengxu/space-vim-theme'
 Plug 'dracula/vim'
@@ -641,59 +640,6 @@ let g:airline_theme='dracula'
 "let g:airline#extensions#tabline#enabled=1
 " Show buffers count
 let g:airline#extensions#tabline#buffer_nr_show=1
-
-highlight GitStatusAdd ctermfg=142 ctermbg=239 guifg=#98C379 guibg=#44475A
-highlight GitStatusMod ctermfg=214 ctermbg=239 guifg=#FABD2F guibg=#44475A
-highlight GitStatusDel ctermfg=167 ctermbg=239 guifg=#FB4934 guibg=#44475A
-set laststatus=2
-let g:HicusLineEnabled = 1
-let g:HicusColorSetWay = 1
-let g:HicusLine = {
-			\ 'active': {
-			\     'left': [ 'modehighlight', 'space', 'filename', 'truncate', 'space',
-			\               'spell', '%#infos#', 'gitinfo', 0, 'modified', 'readonly',
-			\                'space', '%#ErrorStatus#', 'errorstatus', 'space',
-			\               '%#WarningStatus#', 'warningstatus', 'bufferline', 'truncate',
-			\               'gitmodified' ],
-			\     'right': [ 'filetype3', 'space', '%#infos#', 'space', 'fileencoding',
-			\                'space', "%{exists('*CapsLockStatusline')".
-			\                "?CapsLockStatusline():''}" , 'space', 'fileformat',
-			\                'truncate', 'space', 'modehighlight', 'space', 'linenumber',
-			\                ':', 'bufferlinesnumber', 'space', 'windowpercentage',
-			\                'space' ],
-			\ },
-			\ 'basic_option': {
-			\     'ErrorSign': '●',
-			\     'WarningSign': '●'
-			\ }
-\}
-let g:HicusLineMode = {
-			\ 'n':      [ '', 'normalmode', { 'infos': 'normalinfos', }, ],
-			\ 'i':      [ '', 'insertmode', { 'infos': 'otherinfos',  }, ],
-			\ 'R':      [ '', 'replacemode', { 'infos': 'otherinfos',  }, ],
-			\ 'v':      [ '', 'visualmode', { 'infos': 'otherinfos',  }, ],
-			\ 'V':      [ '', 'visualmode', { 'infos': 'otherinfos',  }, ],
-			\ "\<C-v>": [ '', 'visualmode', { 'infos': 'otherinfos',  }, ],
-			\ 'c':      [ '', 'commandmode', { 'infos': 'otherinfos',  }, ],
-			\ 's':      [ '', 'normalmode', { 'infos': 'normalinfos',  }, ],
-			\ 'S':      [ '', 'normalmode', { 'infos': 'normalinfos',  }, ],
-			\ "\<C-s>": [ '', 'normalmode', { 'infos': 'normalinfos',  }, ],
-			\ 't':      [ '', 'normalmode', { 'infos': 'normalinfos',  }, ]
-\}
-let g:HicusColor = {
-			\ 'StatusLine':         [ 'none', '#8BE9FD', '#44475A', ],
-			\ 'normalmode':         [ 'bold', '#282A36', '#BD93F9', ],
-			\ 'insertmode':         [ 'bold', '#282A36', '#50FA7B', ],
-			\ 'visualmode':         [ 'bold', '#282A36', '#FFB86C', ],
-			\ 'replacemode':        [ 'bold', '#282A36', '#FF5555', ],
-			\ 'commandmode':        [ 'bold', '#C6C6C6', '#3A81C3', ],
-			\ 'normalinfos':        [ 'none', '#FFFFFF', '#6272A4', ],
-			\ 'otherinfos':         [ 'none', '#44475A', '#8BE9FD', ],
-			\ 'ErrorStatus':        [ 'none', '#FF0033', '#44475A', ],
-			\ 'WarningStatus':      [ 'none', '#FFCC00', '#44475A', ],
-			\ 'HicusBuffer':        [ 'none', '#FFFFFF', '#44475A', ],
-			\ 'HicusCurrentBuffer': [ 'bold', '#FFFFFF', 'none', ]
-\}
 
 
 " ==
