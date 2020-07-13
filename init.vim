@@ -523,9 +523,6 @@ Plug 'tweekmonster/braceless.vim', { 'for' :['python', 'vim-plug'] }
 " Flutter
 Plug 'theniceboy/dart-vim-plugin'
 
-" Swift
-Plug 'keith/swift.vim'
-
 " Markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install_sync() }, 'for' :['markdown', 'vim-plug'] }
 Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle', 'for': ['text', 'markdown', 'vim-plug'] }
