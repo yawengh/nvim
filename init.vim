@@ -4,7 +4,7 @@
 "| |  | | | |   | |\  | \ V /  | || |  | |  _ <| |___
 "|_|  |_| |_|   |_| \_|  \_/  |___|_|  |_|_| \_\\____|
 
-" Author: @KiteAB
+" Author: @KiteAB (https://github.com/KiteAB)
 
 " Checkout-list
 " vim-esearch
@@ -434,7 +434,7 @@ endfunc
 
 call plug#begin('~/.config/nvim/plugged')
 
-" Testing my own plugin
+" Calculator
 Plug 'theniceboy/vim-calc'
 
 " Pretty Dress
