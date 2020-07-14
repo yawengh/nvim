@@ -140,7 +140,7 @@ noremap <LEADER>rc :e ~/.config/nvim/init.vim<CR>
 noremap <LEADER>md :e ~/.config/nvim/.README.md<CR>
 
 " Open Startify
-noremap <LEADER>st :Startify<CR>
+"noremap <LEADER>st :Startify<CR>
 
 " Undo operations
 noremap l u
