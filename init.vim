@@ -249,6 +249,7 @@ noremap <C-E> 5<C-e>
 " === Insert Mode Cursor Movement
 " ===
 inoremap <C-a> <ESC>A
+inoremap <C-f> <ESC>0<insert>
 
 
 " ===
