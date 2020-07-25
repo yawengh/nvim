@@ -79,7 +79,7 @@ Info: the `N` and `I` are move cursor to line the first and the end.
 | B    | Move cursor to previous 5 words's beginning |
 | w    | Move cursor to next word's beginning        |
 | W    | Move cursor to next 5 words's beginning     |
-| H    | Move cursor to next word's end              |
+| h    | Move cursor to next word's end              |
 | tt   | Open the file explorer (coc.nvim)           |
 | ts   | Translate the word at the cursor (coc.nvim) |
 | S    | Save the file in a buffer                   |
