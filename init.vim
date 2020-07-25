@@ -614,8 +614,8 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 "color dracula
 "color one
-"color deus
-colorscheme space_vim_theme
+color deus
+"colorscheme space_vim_theme
 "color gruvbox
 "let ayucolor="light"
 "color ayu
