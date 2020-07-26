@@ -438,6 +438,9 @@ call plug#begin('~/.config/nvim/plugged')
 " Calculator
 Plug 'theniceboy/vim-calc'
 
+" Practical
+Plug 'SpringHan/vim-focus'
+
 " Pretty Dress
 Plug 'bling/vim-bufferline'
 Plug 'theniceboy/vim-deus'
@@ -766,6 +769,15 @@ let g:TerslationFloatWin = 1
 nnoremap <silent><leader>tp "tp
 nnoremap <silent><leader>ts :TerslationToggle<CR>
 nnoremap <silent><leader>tws :TerslationWordTrans<CR>
+
+
+" ===
+" === vim-focus
+" ===
+vnoremap <silent> <leader>vf :FocusStart<CR>
+vnoremap <silent> <leader>vs :FocusConvert<CR>
+
+let g:VimFocusOpenWay = 'window'
 
 
 " ===
