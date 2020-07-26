@@ -559,6 +559,10 @@ Plug 'AndrewRadev/splitjoin.vim'
 "Plug 'reedes/vim-wordy'
 "Plug 'ron89/thesaurus_query.vim'
 
+" Translator
+"Plug 'denstiny/Terslation'
+Plug 'SpringHan/Terslation.vim', { 'on': [ 'TerslationToggle', 'TerslationWordTrans' ] }
+
 " Bookmarks
 Plug 'MattesGroeger/vim-bookmarks'
 
@@ -710,7 +714,7 @@ nnoremap <leader>tn :CocCommand todolist.create<CR>
 nnoremap <leader>tl :CocList todolist<CR>
 nnoremap <leader>tu :CocCommand todolist.download<CR>:CocCommand todolist.upload<CR>
 " coc-tasks
-noremap <silent> <leader>ts :CocList tasks<CR>
+noremap <silent> <leader>tsk :CocList tasks<CR>
 " coc-snippets
 " Use <C-l> for trigger snippet expand.
 imap <C-l> <Plug>(coc-snippets-expand)
@@ -753,6 +757,15 @@ let g:mkdp_markdown_css = ''
 let g:mkdp_highlight_css = ''
 let g:mkdp_port = ''
 let g:mkdp_page_title = '「${name}」'
+
+
+" ===
+" === Terslation.vim
+" ===
+let g:TerslationFloatWin = 1
+nnoremap <silent><leader>tp "tp
+nnoremap <silent><leader>ts :TerslationToggle<CR>
+nnoremap <silent><leader>tws :TerslationWordTrans<CR>
 
 
 " ===
