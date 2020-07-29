@@ -450,7 +450,7 @@ Plug 'theniceboy/vim-deus'
 "Plug 'theniceboy/eleline.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'liuchengxu/space-vim-theme'
+"Plug 'liuchengxu/space-vim-theme'
 Plug 'dracula/vim'
 
 " General Highlighter
