@@ -396,7 +396,7 @@ func! CompileRunGcc()
 		set splitbelow
 		exec "!g++ -std=c++11 % -Wall -o %<"
 		:sp
-		:res -15
+		:res 10
 		:term ./%<
 	elseif &filetype == 'java'
 		exec "!javac %"
@@ -481,6 +481,9 @@ Plug 'wellle/tmux-complete.vim'
 " Snippets
 " Plug 'SirVer/ultisnips'
 Plug 'theniceboy/vim-snippets'
+
+" C++ Highlighter
+Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['vim-plug', 'c', 'cpp'] }
 
 " Undo Tree
 Plug 'mbbill/undotree'
