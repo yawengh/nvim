@@ -499,7 +499,7 @@ Plug 'cohama/agit.vim'
 Plug 'Chiel92/vim-autoformat'
 
 " Tex
-Plug 'lervag/vimtex'
+" Plug 'lervag/vimtex'
 
 " CSharp
 Plug 'OmniSharp/omnisharp-vim'
@@ -578,7 +578,7 @@ Plug 'brooth/far.vim', { 'on': ['F', 'Far', 'Fardo'] }
 
 " Mini Vim-APP
 "Plug 'jceb/vim-orgmode'
-Plug 'mhinz/vim-startify'
+" Plug 'mhinz/vim-startify'
 Plug 'skywind3000/asynctasks.vim'
 Plug 'skywind3000/asyncrun.vim'
 
@@ -835,12 +835,12 @@ let g:table_mode_cell_text_object_i_map = 'k<Bar>'
 set rtp+=/usr/local/opt/fzf
 set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
 set rtp+=/home/kiteab/.linuxbrew/opt/fzf
-noremap <C-p> :Files<CR>
-noremap <C-f> :Rg<CR>
-noremap <C-h> :History<CR>
+noremap <silent> <C-p> :Files<CR>
+noremap <silent> <C-f> :Rg<CR>
+noremap <silent> <C-h> :History<CR>
 "noremap <C-t> :BTags<CR>
-noremap <C-l> :Lines<CR>
-noremap <C-w> :Buffers<CR>
+noremap <silent> <C-l> :Lines<CR>
+noremap <silent> <C-w> :Buffers<CR>
 noremap <leader>; :History:<CR>
 
 let g:fzf_preview_window = 'right:60%'
