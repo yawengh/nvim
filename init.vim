@@ -177,7 +177,7 @@ noremap \g :Git
 noremap <c-g> :enew<CR>:term lazygit<CR>
 nnoremap <c-n> :enew<CR>:term lazynpm<CR>
 
-" Backgroud
+" Backgroud transparent
 function! BackgroudColor(option)
 	execute a:option != 1 && a:option != 2 ? "return" : ""
 	if empty(glob($HOME.'/.config/nvim/.backColor'))
@@ -203,7 +203,7 @@ function! BackgroudColor(option)
 	endif
 endfunction
 
-nnoremap <silent> <leader>la :call BackgroudColor(1)<CR>
+nnoremap <silent> tp :call BackgroudColor(1)<CR>
 
 call BackgroudColor(2)
 
