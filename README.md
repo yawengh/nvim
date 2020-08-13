@@ -1,6 +1,6 @@
 # My Neovim Configuration
 
-[中文版](./README-cn.md)
+[中文版](./README_cn.md)
 
 This repository has my personal NeoVim configuration files. (I'm a [colemak](https://www.colemak.com) user.)
 
@@ -10,9 +10,21 @@ If you not understand this NeoVim configuration, please don't use it, Otherwise 
 
 ## Guide
 
-- [Before Using](#before-using)
-- [Key mappings](#key-mappings)
-- [Other related projects](#other-related-projects)
+<!-- TOC GFM -->
+
+* [Before using](#before-using)
+	- [To check the "health"](#to-check-the-health)
+	- [For Python Debugger (via `vimspector`)](#for-python-debugger-via-vimspector)
+	- [Config `Python` path](#config-python-path)
+	- [For Taglist:](#for-taglist)
+	- [For FZF](#for-fzf)
+	- [And also...](#and-also)
+* [Key mappings](#key-mappings)
+	- [Movements](#movements)
+	- [Other keys](#other-keys)
+* [Other related projects](#other-related-projects)
+
+<!-- /TOC -->
 
 ## Before using
 
