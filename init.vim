@@ -50,6 +50,7 @@ set autochdir
 set number
 set relativenumber
 set cursorline
+set hidden
 set noexpandtab
 set tabstop=2
 set shiftwidth=2
@@ -138,9 +139,6 @@ noremap <LEADER>rc :e ~/.config/nvim/init.vim<CR>
 
 " Open the .README.md file anytime
 noremap <LEADER>md :e ~/.config/nvim/.README.md<CR>
-
-" Open Startify
-"noremap <LEADER>st :Startify<CR>
 
 " Undo operations
 noremap l u
@@ -327,7 +325,6 @@ noremap <LEADER>q <C-w>j:q<CR>
 "noremap tmi :+tabmove<CR>
 
 " Buffers
-set hidden
 nnoremap <silent> tl :ls<CR>
 nnoremap <silent> tu :enew<CR>
 nnoremap <silent> ti :bnext<CR>
@@ -440,6 +437,7 @@ Plug 'theniceboy/vim-calc'
 " Practical
 Plug 'SpringHan/vim-focus'
 
+Plug 'arzg/vim-swift'
 " Pretty Dress
 Plug 'bling/vim-bufferline'
 Plug 'bpietravalle/vim-bolt'
@@ -672,42 +670,32 @@ nnoremap <LEADER>g= :GitGutterNextHunk<CR>
 " ===
 " === coc.nvim
 " ===
-" fix the most annoying bug that coc has
-"silent! au BufEnter,BufRead,BufNewFile * silent! unmap if
 let g:coc_global_extensions = [
-  \ 'coc-actions',
-  \ 'coc-css',
-  \ 'coc-diagnostic',
-  \ 'coc-explorer',
-  \ 'coc-flutter-tools',
-  \ 'coc-gitignore',
-  \ 'coc-html',
-  \ 'coc-json',
-  \ 'coc-lists',
-  \ 'coc-prettier',
-  \ 'coc-pyright',
-  \ 'coc-python',
-  \ 'coc-snippets',
-  \ 'coc-sourcekit',
-  \ 'coc-stylelint',
-  \ 'coc-syntax',
-  \ 'coc-tasks',
-  \ 'coc-todolist',
-  \ 'coc-translator',
-  \ 'coc-tslint-plugin',
-  \ 'coc-tsserver',
-  \ 'coc-vimlsp',
-  \ 'coc-vimlsp',
-  \ 'coc-yaml',
-  \ 'coc-yank']
-"set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
-"nmap <silent> <TAB> <Plug>(coc-range-select)
-"xmap <silent> <TAB> <Plug>(coc-range-select)
-" use <tab> for trigger completion and navigate to the next complete item
-function! s:check_back_space() abort
-	let col = col('.') - 1
-	return !col || getline('.')[col - 1]	=~ '\s'
-endfunction
+	\ 'coc-actions',
+	\ 'coc-css',
+	\ 'coc-diagnostic',
+	\ 'coc-explorer',
+	\ 'coc-flutter-tools',
+	\ 'coc-gitignore',
+	\ 'coc-html',
+	\ 'coc-json',
+	\ 'coc-lists',
+	\ 'coc-prettier',
+	\ 'coc-pyright',
+	\ 'coc-python',
+	\ 'coc-snippets',
+	\ 'coc-sourcekit',
+	\ 'coc-stylelint',
+	\ 'coc-syntax',
+	\ 'coc-tasks',
+	\ 'coc-todolist',
+	\ 'coc-translator',
+	\ 'coc-tslint-plugin',
+	\ 'coc-tsserver',
+	\ 'coc-vimlsp',
+	\ 'coc-vimlsp',
+	\ 'coc-yaml',
+	\ 'coc-yank']
 inoremap <silent><expr> <TAB>
 	\ pumvisible() ? "\<C-n>" :
 	\ <SID>check_back_space() ? "\<TAB>" :
@@ -722,23 +710,26 @@ inoremap <silent><expr> <c-space> coc#refresh()
 inoremap <silent><expr> <c-o> coc#refresh()
 function! Show_documentation()
 	call CocActionAsync('highlight')
-		if (index(['vim','help'], &filetype) >= 0)
-			execute 'h '.expand('<cword>')
-		else
-			call CocAction('doHover')
-		endif
+	if (index(['vim','help'], &filetype) >= 0)
+		execute 'h '.expand('<cword>')
+	else
+		call CocAction('doHover')
+	endif
 endfunction
 nnoremap <LEADER>h :call Show_documentation()<CR>
-" autocmd CursorHold * silent call CocActionAsync('highlight')
-
-
-" Open up coc-commands
+nnoremap <silent><nowait> <LEADER>d :CocList diagnostics<cr>
+nmap <silent> <LEADER>- <Plug>(coc-diagnostic-prev)
+nmap <silent> <LEADER>= <Plug>(coc-diagnostic-next)
 nnoremap <c-c> :CocCommand<CR>
 " Text Objects
 xmap kf <Plug>(coc-funcobj-i)
 xmap af <Plug>(coc-funcobj-a)
 omap kf <Plug>(coc-funcobj-i)
 omap af <Plug>(coc-funcobj-a)
+xmap kc <Plug>(coc-classobj-i)
+omap kc <Plug>(coc-classobj-i)
+xmap ac <Plug>(coc-classobj-a)
+omap ac <Plug>(coc-classobj-a)
 " Useful commands
 nnoremap <silent> <space>y :<C-u>CocList -A --normal yank<cr>
 nmap <silent> gd <Plug>(coc-definition)
@@ -775,14 +766,7 @@ let g:coc_snippet_next = '<c-e>'
 let g:coc_snippet_prev = '<c-n>'
 
 imap <C-e> <Plug>(coc-snippets-expand-jump)
-let g:snips_author = 'David'
-
-nmap <silent> <LEADER>- <Plug>(coc-diagnostic-prev)
-nmap <silent> <LEADER>= <Plug>(coc-diagnostic-next)
-
-" Use <C-j> for both expand and jump (make expand higher priority.)
-imap <C-e> <Plug>(coc-snippets-expand-jump)
-
+let g:snips_author = 'David Zhang'
 
 
 " ===
