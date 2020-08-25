@@ -437,7 +437,6 @@ Plug 'theniceboy/vim-calc'
 " Practical
 Plug 'SpringHan/vim-focus'
 
-Plug 'arzg/vim-swift'
 " Pretty Dress
 Plug 'bling/vim-bufferline'
 Plug 'bpietravalle/vim-bolt'
@@ -692,7 +691,6 @@ let g:coc_global_extensions = [
 	\ 'coc-translator',
 	\ 'coc-tslint-plugin',
 	\ 'coc-tsserver',
-	\ 'coc-vimlsp',
 	\ 'coc-vimlsp',
 	\ 'coc-yaml',
 	\ 'coc-yank']
