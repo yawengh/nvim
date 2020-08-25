@@ -368,7 +368,7 @@ noremap <C-c> zz
 autocmd BufEnter * silent! lcd %:p:h
 
 " Call figlet
-noremap tx :r !figlet
+noremap tx :r !figlet 
 
 " find and replace
 noremap \s :%s//g<left><left>
