@@ -311,7 +311,7 @@ noremap <LEADER>q <C-w>j:q<CR>
 
 
 " ===
-" === Tab management
+" === Tab/Buffer management
 " ===
 
 " Tabs
