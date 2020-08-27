@@ -576,6 +576,8 @@ Plug 'brooth/far.vim', { 'on': ['F', 'Far', 'Fardo'] }
 " Mini Vim-APP
 "Plug 'jceb/vim-orgmode'
 " Plug 'mhinz/vim-startify'
+" Plug 'hardcoreplayers/dashboard-nvim'
+" Plug 'liuchengxu/vim-clap' " Dependency of dashboard
 Plug 'skywind3000/asynctasks.vim'
 Plug 'skywind3000/asyncrun.vim'
 
@@ -645,6 +647,30 @@ let g:airline_theme='dracula'
 "let g:airline#extensions#tabline#enabled=1
 " Show buffers count
 let g:airline#extensions#tabline#buffer_nr_show=1
+
+
+" ===
+" === dashboard-nvim
+" ===
+" let g:dashboard_custom_shortcut = {
+" 	\ 'last_session'       : 'SPC b l',
+" 	\ 'find_history'       : 'SPC b h',
+" 	\ 'find_file'          : 'SPC b f',
+" 	\ 'new_file'           : 'SPC b n',
+" 	\ 'change_colorscheme' : 'SPC b c',
+" 	\ 'find_word'          : 'SPC b a',
+" 	\ 'book_marks'         : 'SPC b b',
+" 	\ }
+" let g:dashboard_custom_shortcut_icon['last_session'] = ' '
+" let g:dashboard_custom_shortcut_icon['find_history'] = 'ﭯ '
+" let g:dashboard_custom_shortcut_icon['find_file'] = ' '
+" let g:dashboard_custom_shortcut_icon['new_file'] = ' '
+" let g:dashboard_custom_shortcut_icon['change_colorscheme'] = ' '
+" let g:dashboard_custom_shortcut_icon['find_word'] = ' '
+" let g:dashboard_custom_shortcut_icon['book_marks'] = ' '
+" let dashboard_session_directory = "~/.config/nvim/tmp/session"
+" nmap <Leader>bs :<C-u>SessionSave<CR>
+" nmap <Leader>bo :<C-u>SessionLoad<CR>
 
 
 " ==
