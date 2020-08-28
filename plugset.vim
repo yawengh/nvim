@@ -14,6 +14,16 @@ let g:airline#extensions#tabline#buffer_nr_show=1
 
 
 " ===
+" === vim-bufferline
+" ===
+" let g:bufferline_echo = 1
+" let g:bufferline_active_buffer_left = '['
+" let g:bufferline_active_buffer_right = ']'
+" let g:bufferline_modified = '+'
+" let g:bufferline_show_bufnr = 1
+"
+
+" ===
 " === dashboard-nvim
 " ===
 " let g:dashboard_custom_shortcut = {
