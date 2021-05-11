@@ -73,6 +73,8 @@ nnoremap <LEADER>g= :GitGutterNextHunk<CR>
 let g:coc_global_extensions = [
 	\ 'coc-actions',
 	\ 'coc-css',
+	\ 'coc-cmake', 
+	\ 'coc-clang-format-style-options', 
 	\ 'coc-diagnostic',
 	\ 'coc-explorer',
 	\ 'coc-flutter-tools',
@@ -87,6 +89,7 @@ let g:coc_global_extensions = [
 	\ 'coc-snippets',
 	\ 'coc-sourcekit',
 	\ 'coc-stylelint',
+	\ 'coc-sh',
 	\ 'coc-syntax',
 	\ 'coc-tasks',
 	\ 'coc-todolist',
@@ -397,7 +400,6 @@ noremap <LEADER>gi :FzfGitignore<CR>
 " ===
 " === Ultisnips
 " ===
-" let g:tex_flavor = "latex"
 " inoremap <c-n> <nop>
 " let g:UltiSnipsExpandTrigger="<c-e>"
 " let g:UltiSnipsJumpForwardTrigger="<c-e>"
@@ -415,14 +417,40 @@ noremap <LEADER>gi :FzfGitignore<CR>
 " ===
 " === vimtex
 " ===
-" let g:vimtex_view_method = ''
-" let g:vimtex_view_general_viewer = 'llpp'
-" let g:vimtex_motion_enabled = 0
-" let g:tex_flavor = 'latex'
-" let g:vimtex_mappings_enabled = 0
-" let g:vimtex_text_obj_enabled = 0
-" let maplocalleader=' '
+let g:vimtex_compiler_progname = 'nvr'
+let g:tex_flavor = "latex"
+let g:vimtex_view_method = 'zathura'
+let g:vimtex_view_general_viewer = 'llpp'
+let g:vimtex_motion_enabled = 0
+let g:vimtex_mappings_enabled = 0
+let g:vimtex_text_obj_enabled = 0
+let maplocalleader=' '
 
+set conceallevel=2
+let g:tex_conceal='abdmg'
+
+let g:vimtex_compiler_latexmk = { 
+        \ 'executable' : 'latexmk',
+        \ 'options' : [ 
+        \   '-xelatex',
+        \   '-file-line-error',
+        \   '-synctex=1',
+        \   '-interaction=nonstopmode',
+        \ ],
+        \}
+
+" 对中文的支持
+let g:Tex_CompileRule_pdf = 'xelatex -synctex=1 --interaction=nonstopmode $*'
+let g:vimtex_compiler_latexmk_engines = {'_':'-xelatex'}
+let g:vimtex_compiler_latexrun_engines ={'_':'xelatex'}
+
+" ===
+" === latex-preview
+" ===
+let g:livepreview_previewer = 'zathura' 
+let g:livepreview_engine = 'xelatex'
+let g:livepreview_cursorhold_recompile = 0
+autocmd Filetype tex setl updatetime=3
 
 " ===
 " === vim-calendar

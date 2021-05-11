@@ -71,7 +71,10 @@ Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
 
 " Tex
-" Plug 'lervag/vimtex'
+Plug 'lervag/vimtex'
+Plug 'KeitaNakamura/tex-conceal.vim', {'for': 'tex'}
+Plug 'wjakob/wjakob.vim'
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 " CSharp
 Plug 'OmniSharp/omnisharp-vim'
